@@ -82,6 +82,7 @@ const ProductsPage = () => {
 function App() {
   return (
     <Routes>
+      <Route path="/" element={<h1>Welcome to the Product Page</h1>} />
       <Route path="/:page" element={<ProductsPage />} />
       <Route path="*" element={<h1>Page Not Found</h1>} />
     </Routes>
